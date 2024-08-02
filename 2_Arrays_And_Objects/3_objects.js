@@ -1,0 +1,40 @@
+// singleton
+// Object.create
+
+// object literals
+
+const mySym = Symbol("key1")
+
+
+const JsUser = {  // here JSuer is object while its contents are properties  example name 
+    name: "Hitesh",
+    "full name": "Hitesh Choudhary", // we use commas 
+    [mySym]: "mykey1",   
+    age: 18,
+    location: "Jaipur",
+    email: "hitesh@google.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Saturday"]
+}
+// Accessing properties : we have two ways here . and brackets 
+
+// console.log(JsUser.email)
+// console.log(JsUser["email"])
+// console.log(JsUser["full name"])
+// console.log(JsUser[mySym])
+
+JsUser.email = "hitesh@chatgpt.com"
+// Object.freeze(JsUser) // no correction can be made on JsUser after this 
+JsUser.email = "hitesh@microsoft.com"
+// console.log(JsUser);
+
+JsUser.greeting = function(){
+    console.log("Hello JS user");
+}
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`); // we have used this here to access the object`s properties
+}
+
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
+// console.log(JsUser.greetingTwo);  ====> this will give error
