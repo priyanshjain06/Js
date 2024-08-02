@@ -1,7 +1,7 @@
 const marvel_heros = ["thor", "Ironman", "spiderman"]
 const dc_heros = ["superman", "flash", "batman"]
 
-// marvel_heros.push(dc_heros) // array within array not a goof practice
+// marvel_heros.push(dc_heros) // array within array not a good practice
 
 // console.log(marvel_heros);
 // console.log(marvel_heros[3][1]);
@@ -30,3 +30,13 @@ let score3 = 300
 
 console.log(Array.of(score1, score2, score3));
 // console.log(Array.from(score1,score2,score3)); // it is wrong method 
+console.log("--------------------------------------------");
+
+let obj = {name: "hitesh"};
+let valuesArray = Object.values(obj);
+console.log(valuesArray); // Output: ['hitesh']
+
+let entriesArray = Object.entries(obj);
+console.log(entriesArray); // Output: [['name', 'hitesh']]
+
+console.log(Array.isArray(obj)); // Output: false

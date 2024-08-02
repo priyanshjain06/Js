@@ -1,0 +1,40 @@
+document.querySelector('h2')
+document.querySelector('#title')
+documnet.querySelector('.heading')
+documnet.querySelector('input[type="password"]')
+
+
+document.querySelectorAll('ul')
+const myUl=document.querySelectorAll('ul')
+myUl.querySelectorAll('li')
+const myGreen=myUl.querySelectorAll('li')
+myGreen.style.backgroundColor="Green"
+myGreen.style.padding="10px"
+myGreen.innerText
+myGreen.innerText="five"
+
+const tempLiList = document.querySelectorAll('li') 
+// get all list items as node list which is different from array
+
+tempLiList.style.color="red" 
+// gives error as tempLiList is not array
+// to check this click on prototype and look for FOR EACH   which proves it not an array 
+
+tempLiList[0].style.color="red"
+
+
+
+tempLiList
+tempLiList.foreach(function(item){
+    item.style.color="white"
+})
+
+
+documnet.getElementBYClassName('list-item')
+const tempClassList= documnet.getElementBYClassName('list-item')
+tempClassList
+tempClassList.foreach(function(item)
+{
+    console.log(item)
+})
+// it will give error

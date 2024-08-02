@@ -4,6 +4,7 @@ const repoCount = 50
 // console.log(name + repoCount + " Value"); not recommended to use this format not clean code
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+// `` is called backexe
 
 const gameName = new String('hitesh-hc-com')
 
@@ -32,5 +33,5 @@ console.log(url.replace('%20', '-'))
 
 console.log(url.includes('sundar'))
 
-console.log(gameName.split('-'));
-// we have mentioned seperator over here 
+console.log(gameName.split('-', 2));
+// we have mentioned seperator and limit . we are have used seperator here
