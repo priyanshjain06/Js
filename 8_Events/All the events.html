@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners Examples</title>
+    <style>
+        .example {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .example div, .example input, .example select {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Listeners Examples</h1>
+
+    <!-- Mouse Events -->
+    <div class="example">
+        <h2>Mouse Events</h2>
+
+        <!-- click event -->
+        <div id="mouseArea" style="width: 100px; height: 100px; background: lightblue;">
+            Click me
+        </div>
+        <script>
+            document.getElementById('mouseArea').addEventListener('click', function() {
+                alert('Div clicked!');
+            });
+        </script>
+
+        <!-- dblclick event -->
+        <div id="doubleClickArea" style="width: 100px; height: 100px; background: lightcoral;">
+            Double Click me
+        </div>
+        <script>
+            document.getElementById('doubleClickArea').addEventListener('dblclick', function() {
+                alert('Div double-clicked!');
+            });
+        </script>
+
+        <!-- mousedown event -->
+        <div id="mouseDownArea" style="width: 100px; height: 100px; background: lightgreen;">
+            Mouse Down
+        </div>
+        <script>
+            document.getElementById('mouseDownArea').addEventListener('mousedown', function() {
+                alert('Mouse button pressed down!');
+            });
+        </script>
+
+        <!-- mouseup event -->
+        <div id="mouseUpArea" style="width: 100px; height: 100px; background: lightyellow;">
+            Mouse Up
+        </div>
+        <script>
+            document.getElementById('mouseUpArea').addEventListener('mouseup', function() {
+                alert('Mouse button released!');
+            });
+        </script>
+
+        <!-- mousemove event -->
+        <div id="mouseMoveArea" style="width: 100px; height: 100px; background: lightpink;">
+            Mouse Move
+        </div>
+        <script>
+            document.getElementById('mouseMoveArea').addEventListener('mousemove', function() {
+                console.log('Mouse moved over the div!');
+            });
+        </script>
+
+        <!-- mouseover event -->
+        <div id="mouseOverArea" style="width: 100px; height: 100px; background: lightgray;">
+            Mouse Over
+        </div>
+        <script>
+            document.getElementById('mouseOverArea').addEventListener('mouseover', function() {
+                console.log('Mouse over the div!');
+            });
+        </script>
+
+        <!-- mouseout event -->
+        <div id="mouseOutArea" style="width: 100px; height: 100px; background: lightcyan;">
+            Mouse Out
+        </div>
+        <script>
+            document.getElementById('mouseOutArea').addEventListener('mouseout', function() {
+                console.log('Mouse left the div!');
+            });
+        </script>
+    </div>
+
+    <!-- Keyboard Events -->
+    <div class="example">
+        <h2>Keyboard Events</h2>
+
+        <!-- keydown event -->
+        <input type="text" id="inputArea" placeholder="Type here">
+        <script>
+            document.getElementById('inputArea').addEventListener('keydown', function(event) {
+                console.log(`Key pressed: ${event.key}`);
+            });
+        </script>
+
+        <!-- keypress event -->
+        <input type="text" id="inputAreaKeyPress" placeholder="Type here">
+        <script>
+            document.getElementById('inputAreaKeyPress').addEventListener('keypress', function(event) {
+                console.log(`Key pressed (keypress): ${event.key}`);
+            });
+        </script>
+
+        <!-- keyup event -->
+        <input type="text" id="inputAreaKeyUp" placeholder="Type here">
+        <script>
+            document.getElementById('inputAreaKeyUp').addEventListener('keyup', function(event) {
+                console.log(`Key released: ${event.key}`);
+            });
+        </script>
+    </div>
+
+    <!-- Form Events -->
+    <div class="example">
+        <h2>Form Events</h2>
+
+        <!-- submit event -->
+        <form id="formArea">
+            <input type="text" name="name" placeholder="Enter name">
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            document.getElementById('formArea').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Form submitted!');
+            });
+        </script>
+
+        <!-- change event -->
+        <select id="selectArea">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+        </select>
+        <script>
+            document.getElementById('selectArea').addEventListener('change', function(event) {
+                console.log(`Selected value: ${event.target.value}`);
+            });
+        </script>
+
+        <!-- input event -->
+        <input type="text" id="inputChangeArea" placeholder="Type here">
+        <script>
+            document.getElementById('inputChangeArea').addEventListener('input', function(event) {
+                console.log(`Input changed to: ${event.target.value}`);
+            });
+        </script>
+    </div>
+
+    <!-- Window Events -->
+    <div class="example">
+        <h2>Window Events</h2>
+
+        <!-- load event -->
+        <script>
+            window.addEventListener('load', function() {
+                console.log('Page fully loaded');
+            });
+        </script>
+
+        <!-- resize event -->
+        <script>
+            window.addEventListener('resize', function() {
+                console.log('Window resized');
+            });
+        </script>
+
+        <!-- scroll event -->
+        <div style="height: 1500px;">Scroll the page</div>
+        <script>
+            window.addEventListener('scroll', function() {
+                console.log('Page scrolled');
+            });
+        </script>
+    </div>
+
+    <!-- Touch Events -->
+    <div class="example">
+        <h2>Touch Events</h2>
+
+        <!-- touchstart event -->
+        <div id="touchArea" style="width: 100px; height: 100px; background: lightgreen;">
+            Touch me
+        </div>
+        <script>
+            document.getElementById('touchArea').addEventListener('touchstart', function() {
+                alert('Div touched!');
+            });
+        </script>
+
+        <!-- touchmove event -->
+        <div id="touchMoveArea" style="width: 100px; height: 100px; background: lightblue;">
+            Touch and Move
+        </div>
+        <script>
+            document.getElementById('touchMoveArea').addEventListener('touchmove', function() {
+                console.log('Touch moved over the div!');
+            });
+        </script>
+
+        <!-- touchend event -->
+        <div id="touchEndArea" style="width: 100px; height: 100px; background: lightcoral;">
+            Touch End
+        </div>
+        <script>
+            document.getElementById('touchEndArea').addEventListener('touchend', function() {
+                console.log('Touch ended!');
+            });
+        </script>
+    </div>
+
+    <!-- Drag and Drop Events -->
+    <div class="example">
+        <h2>Drag and Drop Events</h2>
+
+        <!-- dragstart event -->
+        <div id="dragItem" draggable="true" style="width: 100px; height: 100px; background: pink;">
+            Drag me
+        </div>
+        <script>
+            document.getElementById('dragItem').addEventListener('dragstart', function(event) {
+                event.dataTransfer.setData('text/plain', 'This text may be dragged');
+            });
+        </script>
+
+        <!-- drag event -->
+        <div id="dragItemMove" draggable="true" style="width: 100px; height: 100px; background: pink; margin-top: 10px;">
+            Drag me
+        </div>
+        <script>
+            document.getElementById('dragItemMove').addEventListener('drag', function() {
+                console.log('Dragging...');
+            });
+        </script>
+
+        <!-- dragend event -->
+        <div id="dragItemEnd" draggable="true" style="width: 100px; height: 100px; background: pink; margin-top: 10px;">
+            Drag me
+        </div>
+        <script>
+            document.getElementById('dragItemEnd').addEventListener('dragend', function() {
+                console.log('Drag ended');
+            });
+        </script>
+
+        <!-- dragover event -->
+        <div id="dropAreaOver" style="width: 200px; height: 200px; background: lightgray; margin-top: 20px;">
+            Drop here
+        </div>
+        <script>
+            document.getElementById('dropAreaOver').addEventListener('dragover', function(event) {
+                event.preventDefault();
+                console.log('Dragging over the drop area');
+            });
+        </script>
+
+        <!-- drop event -->
+        <div id="dropArea" style="width: 200px; height: 200px; background: lightgray; margin-top: 20px;">
+            Drop here
+        </div>
+        <script>
+            document.getElementById('dropArea').addEventListener('drop', function(event) {
+                event.preventDefault();
+                var data = event.dataTransfer.getData('text/plain');
+                event.target.innerHTML = data;
+            });
+        </script>
+    </div>
+
+</body>
+</html>
+
+
+
+
+<!-- Mouse Events
+click
+dblclick
+mousedown
+mouseup
+mousemove
+mouseover
+mouseout
+mouseenter
+mouseleave
+Keyboard Events
+keydown
+keypress
+keyup
+Form Events
+submit
+change
+input
+focus
+blur
+reset
+Window Events
+load
+resize
+scroll
+unload
+beforeunload
+Touch Events (for touch-enabled devices)
+touchstart
+touchmove
+touchend
+touchcancel
+Drag and Drop Events
+drag
+dragstart
+dragend
+dragenter
+dragover
+dragleave
+drop
+Clipboard Events
+copy
+cut
+paste
+Media Events
+play
+pause
+ended
+volumechange
+timeupdate
+seeking
+seeked
+Animation Events
+animationstart
+animationend
+animationiteration
+Transition Events
+transitionstart
+transitionend
+transitionrun
+transitioncancel
+Focus Events
+focus
+blur
+focusin
+focusout
+Other Events
+contextmenu
+error
+abort
+wheel
+pointerdown
+pointerup
+pointermove
+pointerover
+pointerout
+pointerenter
+pointerleave -->

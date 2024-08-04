@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      
+</body>
+<script>
+    //Alternative is to use stop propagation
+    document.getElementById('myList').addEventListener('click', function(event) {
+    // Check if the clicked element is an li
+    if (event.target && event.target.nodeName === 'LI') {
+        console.log('List item', event.target.textContent, 'was clicked');
+    }
+});
+
+</script>
+</html>
+
+<!-- Event delegation is a technique in JavaScript that leverages event bubbling to handle events efficiently. Instead of adding an event listener to multiple child elements, you add a single event listener to a parent element. -->

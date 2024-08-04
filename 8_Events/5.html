@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event Properties Example</title>
+    <style>
+        #keyArea {
+            width: 300px;
+            height: 50px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="keyArea" placeholder="Type something...">
+    <div id="keyEventDetails"></div>
+
+    <script>
+        document.getElementById('keyArea').addEventListener('keydown', function(event) {
+            const details = `
+                <p>Event Type: ${event.type}</p>
+                <p>Timestamp: ${event.timeStamp}</p>
+                <p>Default Prevented: ${event.defaultPrevented}</p>
+                <p>Target: ${event.target.tagName}</p>
+                <p>Current Target: ${event.currentTarget.tagName}</p>
+                <p>Key Code: ${event.keyCode}</p>
+                <p>Key: ${event.key}</p>
+                <p>Alt Key Pressed: ${event.altKey}</p>
+                <p>Ctrl Key Pressed: ${event.ctrlKey}</p>
+                <p>Shift Key Pressed: ${event.shiftKey}</p>
+            `;
+            document.getElementById('keyEventDetails').innerHTML = details;
+        });
+    </script>
+</body>
+</html>
