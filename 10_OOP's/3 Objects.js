@@ -18,10 +18,13 @@ console.log(multipleBy5.power);
 console.log(multipleBy5.prototype); // returns {}
 
 function createUser(username, score){
+    if(!username || typeof username !== "string"){
+        throw new Error("username is required and must be a string")
+    }
     this.username = username
+    this.setScore(score)
     this.score = score
 }
-
 createUser.prototype.increment = function(){
     this.score++
 }
