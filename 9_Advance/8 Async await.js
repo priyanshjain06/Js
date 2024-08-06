@@ -52,7 +52,7 @@ let stocks = {
     })
   }
 
-async function kitchen(){
+async function kitchen(){ 
     try{
 	await time(2000)
 	console.log(`${stocks.Fruits[0]} was selected`)
