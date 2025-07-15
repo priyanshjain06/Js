@@ -1,90 +1,95 @@
-let score = "hitesh"
+let score = "hitesh";
 
-//console.log(typeof score);  // 1st way to check
-//console.log(typeof(score)); // 2nd way to check 
+//console.log(typeof score);  //REVIEW 1st way to check
+//console.log(typeof(score)); //REVIEW 2nd way to check
 
-let valueInNumber = Number(score)
+let valueInNumber = Number(score);
 //console.log(typeof valueInNumber); // returns number
 //console.log(valueInNumber); // returns NaN => means Not a number
 
-let score2= null
+let score2 = null;
 // console.log(typeof score2);  // returns object
-//console.log(typeof(score2)); // returns object 
+//console.log(typeof(score2)); // returns object
 
-let valueInNumber2 = Number(score2)
+let valueInNumber2 = Number(score2);
 //console.log(typeof valueInNumber2); // returns number
-//console.log(valueInNumber2); // returns 0 
+//console.log(valueInNumber2); // returns 0
 
-let score3= undefined
+let score3 = undefined;
 // console.log(typeof score3);  // returns undefined
 //console.log(typeof(score3)); // returns undefined
 
-let valueInNumber3 = Number(score3)
+let valueInNumber3 = Number(score3);
 //console.log(typeof valueInNumber3); // returns number
 //console.log(valueInNumber3); // returns Nan
 
-
-let score4= true
+let score4 = true;
 // console.log(typeof score4);  // returns bollean
-//console.log(typeof(score4)); // returns bollean 
+//console.log(typeof(score4)); // returns bollean
 
-let valueInNumber4 = Number(score4)
+let valueInNumber4 = Number(score4);
 //console.log(typeof valueInNumber4); // returns number
 //console.log(valueInNumber2); // returns 1
- 
+
 // "33" => 33
-// "33abc" => NaN (for string)
+//REVIEW "33abc" => NaN (for string)
 //  true => 1; false => 0
 
-let isLoggedIn = "hitesh"
+// REVIEW
+let isLoggedIn = "hitesh";
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)
+let booleanIsLoggedIn = Boolean(isLoggedIn);
 //  console.log(booleanIsLoggedIn);
 
 // 1 => true; 0 => false
 // "" => false
 // "hitesh" => true
 
-let someNumber = 33
+let someNumber = 33;
 
-let stringNumber = String(someNumber)
+let stringNumber = String(someNumber);
 // console.log(stringNumber);  //returns 33
-// console.log(typeof stringNumber);  // returns string 
+// console.log(typeof stringNumber);  // returns string
 
 // *********************** Operations ***********************
 
-let value = 3
-let negValue = -value
+let value = 3;
+let negValue = -value;
 // console.log(negValue); // returns -3
 
-// console.log(2+2);
-// console.log(2-2);
-// console.log(2*2);
-// console.log(2**3);
-// console.log(2/3);
-// console.log(2%3);
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 ** 3); //REVIEW 8 => 2*2*3
+console.log(2 / 3);
+console.log(2 % 3);
 
-let str1 = "hello"
-let str2 = " hitesh"
+let str1 = "hello";
+let str2 = " hitesh";
 
-let str3 = str1 + str2
-// console.log(str3);
+let str3 = str1 + str2;
+console.log(str3); //REVIEW
 
-// console.log("1" + 2); 
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);// returns 122
-// console.log(1 + 2 + "2");  // returns 32
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2); //REVIEW  returns 122
+console.log(1 + 2 + "2"); //REVIEW returns 32
+
+// NOTE - why ?
+//Rule of Thumb:
+// If any operand of + is a string, JavaScript will coerce the other operand(s) to string and concatenate.
+// But JavaScript evaluates from left to right — so order matters a lot!
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true); // returns 1
-// console.log(+""); // returns 0
+// console.log(+true); //REVIEW returns 1
+// console.log(+""); //REVIEW returns 0
 
-let num1, num2, num3
+let num1, num2, num3;
 
-num1 = num2 = num3 = 2 + 2 // not a good practice
+num1 = num2 = num3 = 2 + 2; // not a good practice
 
-let gameCounter = 100
+let gameCounter = 100;
 ++gameCounter;
 console.log(gameCounter);
 

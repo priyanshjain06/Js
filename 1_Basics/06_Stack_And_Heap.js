@@ -1,4 +1,4 @@
-// Stack(primitive) ,Heap (reference or Non primitive)
+//REVIEW  Stack(primitive) ,Heap (reference or Non primitive)
 
 let score = 100;
 let scoreValue = score;
@@ -8,7 +8,7 @@ scoreValue = 200;
 console.log(scoreValue);
 console.log(score);
 
-// Heap
+//REVIEW  Heap
 let user = {
   email: "priyansh010gmail.com",
   upi: 123,

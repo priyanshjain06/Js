@@ -19,9 +19,9 @@
 <body>
     <div id="clickArea">Click Me!</div>
     <div id="eventDetails"></div>
-
     <script>
         document.getElementById('clickArea').addEventListener('click', function(event) {
+            //REVIEW - 
             const details = `
                 <p>Event Type: ${event.type}</p>
                 <p>Timestamp: ${event.timeStamp}</p>

@@ -1,17 +1,17 @@
 const coding2 = ["js", "ruby", "java", "python", "cpp"]
 
-// FOR EACH LOOP  do not retun anything i.e. undefined 
+//REVIEW  FOR EACH LOOP  do not retun anything i.e. undefined 
 const values = coding2.forEach( (item) => {
     console.log(item);
-    return item 
+    //REVIEW - return item 
 } )
 
 console.log(values); // returns undefined
 
 
 
+//REVIEW FILTER methods  , FILTER returns an array 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// FILTER returns an array 
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
@@ -19,7 +19,7 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // OR WE CAN USE THIS 
 
-
+//REVIEW always use this syntax 
 const newNums = myNums.filter( (num) => num > 4 ) /* Here we dont use return since we have not created a scope using {} */ 
 
 

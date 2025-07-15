@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>html Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -29,22 +29,15 @@
     },false /*it is by default false */)
 
 
-    
- 
-
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
  
 
-
-
-    // false propagation called as BUBBLING PHASE means public progagaption that means flows moves from bottom to top or from traget element to root 
+    //REVIEW false propagation called as BUBBLING PHASE means public progagaption that means flows moves from bottom to top or from traget element to root 
 
     // true propagation called as CAPTURING PHASE means PRIVATE progagaption that means flows moves from top to bottom  or from root element to targeted element 
-
-
 
 
     document.getElementById('images').addEventListener('click', function(e){
@@ -52,19 +45,15 @@
     }, false)
 
 
-
-//     e.stopPropagation():
+// REVIEW     e.stopPropagation():
 // This method stops the event from propagating further up or down the DOM tree. This means that the event won't trigger any other event listeners on parent or child elements.
-
-
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation()
+    //     e.stopPropagation() 
     // }, false)
     
     // Effect: When the element with ID owl is clicked, "owl clicked" is logged, and the click event does not propagate further up the DOM tree.
-
 
 
     // document.getElementById('google').addEventListener('click',function(e){
@@ -74,7 +63,7 @@
     // }, false)
    
 
-    // When the element with ID google is clicked, the default action (e.g., navigating to a URL if it's an anchor element) is prevented, the event does not propagate further up the DOM tree,
+    // When the element with ID google is clicked, the default action (e.g., navigating to a URL if it's an anchor element) is prevented, the event does not propagate further up the DOM tree,and "google clicked" is logged.
     
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
@@ -86,8 +75,7 @@
              // or we can use the below code:
              //removeIt.parentNode.removeChild(removeIt)
         }
-    
     })
-   
+
 </script>
 </html>

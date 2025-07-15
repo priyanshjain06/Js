@@ -1,5 +1,5 @@
 
-"use strict"; // treat all JS code as newer version
+"use strict"; //REVIEW  treat all JS code as newer version
 
 // alert( 3 + 3) // we are using nodejs, not browser
 
@@ -27,4 +27,4 @@ symbol => unique
 // object
 
 console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+console.log(typeof null); //REVIEW  object 
