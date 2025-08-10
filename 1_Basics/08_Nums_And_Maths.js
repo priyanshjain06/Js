@@ -1,7 +1,7 @@
 const score = 400
 // console.log(score);
 
-const balance = new Number(100) // number constructor 
+const balance = new Number(100) //REVIEW  number constructor 
 console.log(balance);
 
 // console.log(balance.toString().length);

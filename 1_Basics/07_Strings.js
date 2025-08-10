@@ -4,9 +4,9 @@ const repoCount = 50
 // console.log(name + repoCount + " Value"); not recommended to use this format not clean code
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
-// `` is called backexe
+//REVIEW  `` is called backexe 
 
-const gameName = new String('hitesh-hc-com')
+const gameName = new String('hitesh-hc-com') //REVIEW constructor
 
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);
@@ -17,11 +17,17 @@ const gameName = new String('hitesh-hc-com')
 console.log(gameName.charAt(2));
 console.log(gameName.indexOf('t'));
 
-const newString = gameName.substring(0, 4) // no negative is allowed and it doesnot include the end index
+const newString = gameName.substring(0, 4) //REVIEW no negative is allowed and it doesnot include the end index
 console.log(newString);
 
-const anotherString = gameName.slice(-8, 4) // negative is allowed here which means it starts from reverse
+const anotherString = gameName.slice(-8, 4) //REVIEW  negative is allowed here which means it starts from reverse
 console.log(anotherString);
+
+
+//REVIEW let str = "Hello";
+// console.log(str.slice(4, 1));      // "" (empty string)
+// console.log(str.substring(4, 1));  // "ell" (swaps 1 and 4)
+
 
 const newStringOne = "   hitesh    "
 console.log(newStringOne);
