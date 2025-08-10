@@ -16,7 +16,7 @@ let state;
 // boolean => true/false
 // null => standalone value 
 // undefined =>
-//(symbol) => unique;
+//REVIEW (symbol) => unique;
 // object
 
 console.log(typeof undefined); // undefined

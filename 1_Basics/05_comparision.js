@@ -8,14 +8,14 @@ console.log("2" > 1);
 console.log("02" > 1);
 
 //REVIEW  Type Coercion Rule:
-// When using >, <, >=, <= between a string and a number:
+// When using >, <, >=, <= between a string  a number:
 
 // JavaScript tries to convert the string to a number
 
 // Then performs a numeric comparison
 
 console.log("abc" > 1); // false — "abc" is NaN after coercion → false
-console.log("5" > "12"); // true — string comparison (lexicographic, not numeric!)
+console.log("5" > "12"); //REVIEW  true — string comparison (lexicographic, not numeric!)
 
 //REVIEW null gets converted to 0 and undefined becomes NAN
 

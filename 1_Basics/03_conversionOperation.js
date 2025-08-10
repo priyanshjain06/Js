@@ -21,7 +21,7 @@ let score3 = undefined;
 
 let valueInNumber3 = Number(score3);
 //console.log(typeof valueInNumber3); // returns number
-//console.log(valueInNumber3); // returns Nan
+//console.log(valueInNumber3); //REVIEW returns Nan
 
 let score4 = true;
 // console.log(typeof score4);  // returns bollean
