@@ -8,7 +8,8 @@ scoreValue = 200;
 console.log(scoreValue);
 console.log(score);
 
-//REVIEW  Heap
+//REVIEW  Heap is memory where we store non primitive data (objects , arrays , functions used as Garbage collector in JS)
+
 let user = {
   email: "priyansh010gmail.com",
   upi: 123,
