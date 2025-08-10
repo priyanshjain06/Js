@@ -1,7 +1,7 @@
 // Dates:
 //In JavaScript, a Date object is used to work with dates and times. It provides methods for getting and setting the year, month, day, hour, minute, second, and millisecond of a date object, as well as for performing date and time calculations.
 
-let myDate = new Date()
+let myDate = new Date() //REVIEW date in an object and new is constructor
 console.log(myDate);
 // console.log(myDate.toISOString());
 // console.log("-------");

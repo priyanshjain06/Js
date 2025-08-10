@@ -8,10 +8,10 @@ console.log(balance);
 // console.log(balance.toFixed(2));
 const otherNumber = 123.8966
 
-// console.log(otherNumber.toPrecision(3));  
+// console.log(otherNumber.toPrecision(3));   //124 
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(hundreds.toLocaleString('en-IN')); //REVIEW 10,00,000
 
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
