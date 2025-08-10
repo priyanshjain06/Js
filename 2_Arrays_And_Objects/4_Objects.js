@@ -1,5 +1,5 @@
 // const tinderUser = new Object()
-const tinderUser = {}  // non-singelton  object 
+const tinderUser = {}  //REVIEW non-singelton  object 
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -18,7 +18,7 @@ const regularUser = {
 
 // console.log(regularUser.fullname.userfullname.firstname);
 
-// console.log(regularUser.fullname?userfullname.firstname); // It is a good practice as it provides protection  called as object chaining when we take values from api and we are not sure whether the ojects properties are there or not  
+// console.log(regularUser.fullname?userfullname.firstname); //REVIEW It is a good practice as it provides protection  called as object chaining when we take values from api and we are not sure whether the ojects properties are there or not  
 
 const obj1 = {1: "a", 2: "b"} // object
 const obj2 = {3: "a", 4: "b"}
