@@ -1,5 +1,5 @@
 // Immediately Invoked Function Expressions (IIFE)
-//In order to avoid polluting  of functons by the global namespace or global scopes , we can use IIFE so that it executes the fucntion imdetaily before anything gets executed in the code
+//In order to avoid polluting  of functons by the global namespace or global scopes , we can use IIFE so that it executes the function imdetaily before anything gets executed in the code
 
 (function chai() {
   // named IIFE
