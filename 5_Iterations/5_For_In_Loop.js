@@ -1,3 +1,5 @@
+//REVIEW it used for objects , strings , array , not for maps 
+
 // syntax:-
 // for (const key in object) {
 //     if (Object.hasOwnProperty.call(object, key)) {
