@@ -25,7 +25,9 @@ if (Object.keys(emptyObj).length === 0) {
   console.log("Object is empty");
 }
 
-// Nullish Coalescing Operator (??): null undefined
+//REVIEW  Nullish Coalescing Operator (??): null undefined
+// means let  val1 = val ?? defaultvalue means if value is null undefined then assign it val! 
+
 
 let val1;
 // val1 = 5 ?? 10
