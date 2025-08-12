@@ -1,3 +1,5 @@
+//REVIEW It is used for array and maps !
+
 //REVIEW syntax
 // array.forEach((item, index, array) => {
 //   console.log(item, index, array);
@@ -46,3 +48,16 @@ const myCoding = [
 myCoding.forEach((item) => {
   console.log(item.languageName);
 });
+
+//REVIEW -  for string convert to array first
+
+//REVIEW -  for objects ! 
+
+let obj = { a: 1, b: 2, c: 3 };
+
+Object.keys(obj).forEach((key) => {
+  console.log(key, obj[key]);
+});
+// a 1
+// b 2
+// c 3
