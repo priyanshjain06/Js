@@ -1,9 +1,13 @@
+//REVIEW we use this for two things 1) to access global objects  2) to access the members of  local object in a function inside the object ! 
+
+//REVIEW otherwise it will say undefined !
+
 const user = {
   username: "hitesh",
   price: 999,
 
   welcomeMessage: function () {
-    console.log(`${this.username} , welcome to website`);
+    console.log(`${this.username} , welcome to website`); //REVIEW
     console.log(this); // details about the object
   },
 };
@@ -37,8 +41,8 @@ chai();
 
 const chai_2 = function () {
   let username = "hitesh";
-  console.log(this); // gives deafult values of the function
-  console.log(this.username); // returns undefined it works only in strict mode or if the function is present in the object
+  console.log(this); //REVIEW  gives deafult values of the function
+  console.log(this.username); // REVIEW returns undefined it works only in strict mode or if the function is present in the object
 };
 chai_2()
 
@@ -55,7 +59,7 @@ chai3()
 //     return num1 + num2
 // }
 
-//USED IN REACT : IMPLICIT RETURN 
+//REVIEW USED IN REACT : IMPLICIT RETURN 
 // const addTwo = (num1, num2) =>  num1 + num2 
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
