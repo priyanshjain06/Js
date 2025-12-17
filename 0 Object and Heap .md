@@ -27,6 +27,7 @@ JavaScript mainly uses two memory areas:
 ## Stack Memory 🧱
 
 **Stores:**
+
 - Primitive values (`number`, `string`, `boolean`, `null`, `undefined`, `symbol`)
 - References (addresses) to heap objects
 
@@ -49,6 +50,7 @@ b → 10
 ## Heap Memory 🗄️
 
 **Stores:**
+
 - Objects
 - Arrays
 - Functions
@@ -73,7 +75,7 @@ obj → reference (address)
 
 ---
 
-## Objects are Stored by Reference ⚠️
+## Objects are Stored by Reference
 
 This is the **MOST important rule**.
 
@@ -88,6 +90,7 @@ console.log(obj1.name); // B
 ```
 
 **Why?**
+
 - `obj1` and `obj2` point to same heap object
 - Changing one changes the other
 
@@ -121,6 +124,7 @@ console.log(a === b); // false
 ```
 
 **Why?**
+
 - Different heap memory locations
 
 ---
@@ -161,6 +165,7 @@ console.log(data.value); // 20
 ```
 
 **Why?**
+
 - `data` reference passed
 - Heap object modified
 
@@ -169,6 +174,7 @@ console.log(data.value); // 20
 ## Garbage Collection 🧹
 
 JavaScript automatically frees heap memory when:
+
 - No variable references an object
 
 **Example:**
