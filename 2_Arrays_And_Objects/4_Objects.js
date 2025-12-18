@@ -26,12 +26,12 @@ const obj2 = { 3: "a", 4: "b" };
 const obj4 = { 5: "a", 6: "b" };
 
 // const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4) //REVIEW ==> (source,target) called as spread operator
+// const obj3 = Object.assign({}, obj1, obj2, obj4)  ==> (source,target) called as spread operator
 
 const obj3 = { ...obj1, ...obj2 }; // spread operator 2nd Method
 console.log(obj3);
 
-// when we have to process the data which comes from databases in the form of arrays of objects
+// REVIEW when we have to process the data which comes from databases in the form of arrays of objects
 const users = [
   {
     id: 1,
@@ -47,7 +47,7 @@ const users = [
   },
 ];
 
-users[1].email;
+users[1].email; //REVIEW - 
 // console.log(tinderUser);
 
 console.log(Object.keys(tinderUser));
@@ -55,6 +55,7 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); //REVIEW gives true or false
+
 // console.log(Object.hasOwnProperty(tinderUser, 'isLoggedIn'));
 
 const course = {
@@ -84,7 +85,7 @@ console.log(courseInstructor);
 // }
 // navbar(name="Google")
 
-// when we receive values form api we use json format like bellow 1) array of object  2) objects of strings and other data types
+// REVIEW when we receive values form api we use json format like bellow 1) array of object  2) objects of strings and other data types
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",

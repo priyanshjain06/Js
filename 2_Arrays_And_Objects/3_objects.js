@@ -3,10 +3,9 @@
 
 // object literals
 
-const mySym = Symbol("key1");
+const mySym = Symbol("key1"); //REVIEW - why do we need symbols ? 
 
 const JsUser = {
-  // here JSuer is object while its contents are properties  example name
   name: "Hitesh",
   "full name": "Hitesh Choudhary", // we use commas
   [mySym]: "mykey1", //REVIEW
