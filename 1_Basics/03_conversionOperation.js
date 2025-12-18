@@ -9,7 +9,6 @@ let valueInNumber = Number(score);
 
 let score2 = null;
 // console.log(typeof score2);  // returns object
-//console.log(typeof(score2)); // returns object
 
 let valueInNumber2 = Number(score2);
 //console.log(typeof valueInNumber2); // returns number
@@ -25,7 +24,6 @@ let valueInNumber3 = Number(score3);
 
 let score4 = true;
 // console.log(typeof score4);  // returns bollean
-//console.log(typeof(score4)); // returns bollean
 
 let valueInNumber4 = Number(score4);
 //console.log(typeof valueInNumber4); // returns number
