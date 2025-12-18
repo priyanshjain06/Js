@@ -39,4 +39,4 @@ const myn2 = myArr.splice(1, 3); //REVIEW 1 is inclusive and 3 is also incusive 
 //REVIEW -  it changes the original array
 
 console.log("C ", myArr);
-console.log(myn2);
+console.log(myn2); //REVIEW - 
