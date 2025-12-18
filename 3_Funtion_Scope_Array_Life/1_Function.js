@@ -40,7 +40,7 @@ function loginUserMessage(username = "sam"){
         console.log("PLease enter a username");
         return
     }
-    return `${username} just logged in`     // REMEBER THIS
+    return `${username} just logged in`     //REVIEW REMEBER THIS
 }
 
 // console.log(loginUserMessage("hitesh"))
@@ -52,7 +52,9 @@ function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
 
-console.log(calculateCartPrice(200, 400, 500, 2000))
+console.log(calculateCartPrice(200, 400, 500, 2000)) //REVIEW - 
+
+
 
 const user = {
     username: "hitesh",

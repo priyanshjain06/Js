@@ -26,6 +26,7 @@ function one() {
   two();
 }
 
+//REVIEW - 
 one(); // if parent is called then child function is not called i .e. two()  will not be called
 
 if (true) {
