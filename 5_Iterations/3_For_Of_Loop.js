@@ -1,4 +1,4 @@
-//REVIEW use for array string map  , not for objects
+//REVIEW use for array, string , map  , not for objects
 
 // for of synatx
 // for (const iterator of object) {
@@ -22,7 +22,7 @@ for (const greet of greetings) {
 }
 
 // for map
-const map = new Map();
+const map = new Map(); //REVIEW Constructor is used !
 map.set("IN", "India");
 map.set("USA", "United States of America");
 map.set("Fr", "France");
@@ -51,7 +51,7 @@ const myObject = {
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);}
 
-//REVIEW -  Why  ?
+ // Why  ?
 // const myObject = {
 //   game1: 'NFS',
 //   game2: 'Spiderman'

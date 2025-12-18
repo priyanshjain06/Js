@@ -1,4 +1,4 @@
-//REVIEW it used for objects , strings , array , not for maps 
+//REVIEW it used for objects , strings , array , not for maps
 
 // syntax:-
 // for (const key in object) {
@@ -13,9 +13,11 @@ const myObject1 = {
   rb: "ruby",
   swift: "swift by apple",
 };
+
 //REVIEW
 for (const key in myObject1) {
   console.log(`${key} shortcut is for ${myObject1[key]}`);
+  //REVIEW - . is not used to access , access is done like array
   // console.log(key => {myObject1[key]});
 }
 
