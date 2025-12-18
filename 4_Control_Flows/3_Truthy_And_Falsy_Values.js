@@ -1,16 +1,14 @@
 const userEmail = [];
 
 if (userEmail) {
-  console.log("Got user email"); 
+  console.log("Got user email");
 } else {
   console.log("Don't have user email");
 }
 
 //REVIEW
-
 // falsy values
 // false, 0, -0, BigInt 0n, "", null, undefined, NaN
-
 
 //truthy values
 // "0", 'false', " ", [], {}, function(){}
@@ -26,14 +24,14 @@ if (Object.keys(emptyObj).length === 0) {
 }
 
 //REVIEW  Nullish Coalescing Operator (??): null undefined
-// means let  val1 = val ?? defaultvalue means if value is null undefined then assign it val! 
-
+// let  val1 = null ?? 5
+// is used to provide a default value ONLY when the left side is: null undefined
 
 let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10
 // val1 = undefined ?? 15
-val1 = null ?? 10 ?? 20;
+val1 = null ?? 10 ?? 20; //REVIEW -  10 
 
 console.log(val1);
 
