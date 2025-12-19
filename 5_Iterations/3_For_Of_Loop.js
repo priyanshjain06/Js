@@ -1,7 +1,7 @@
 //REVIEW use for array, string , map  , not for objects
 
 // for of synatx
-// for (const iterator of object) {
+// for (const [key,value] of object) {
 
 // }
 

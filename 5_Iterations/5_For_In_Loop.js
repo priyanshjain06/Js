@@ -1,7 +1,7 @@
 //REVIEW it used for objects , strings , array , not for maps
 
 // syntax:-
-// for (const key in object) {
+// for (const [key,value] in object) {
 //     if (Object.hasOwnProperty.call(object, key)) {
 //         const element = object[key];
 //     }

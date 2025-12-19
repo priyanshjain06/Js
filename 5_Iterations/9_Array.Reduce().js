@@ -15,6 +15,7 @@ const myNums = [1, 2, 3];
 //     return acc + currval
 // }, 0)
 
+//REVIEW -  0  is inital value 
 const myTotal = myNums.reduce((acc, curr) => acc + curr, 0);
 
 console.log(myTotal);

@@ -1,4 +1,4 @@
-//REVIEW It is used for array and maps !
+//REVIEW It is used for maps , array, strings and objects !
 
 //LINK - It’s mainly used when you want to do something with every item, not return a new array.
 

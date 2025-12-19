@@ -1,3 +1,6 @@
+//LINK -  A callback function is a function passed as an argument to another function,
+// and it is called (executed) later by that function.
+
 const coding2 = ["js", "ruby", "java", "python", "cpp"];
 
 //REVIEW  FOR EACH LOOP  do not retun anything i.e. undefined
