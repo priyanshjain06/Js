@@ -38,5 +38,5 @@ console.log(url.replace("%20", "-"));
 
 console.log(url.includes("sundar"));
 
-console.log(gameName.split("-", 2));
+console.log(gameName.split("-", 2)); //REVIEW -
 // we have mentioned seperator and limit . It doesnt chnages original string

@@ -81,7 +81,7 @@ console.log(1 + 2 + "2"); //REVIEW returns 32
 // console.log( (3 + 4) * 5 % 3);
 
 // console.log(+true); //REVIEW returns 1
-// console.log(+""); //REVIEW returns 0
+// console.log(+""); //REVIEW returns 0 , "" is falsy value
 
 let num1, num2, num3;
 
