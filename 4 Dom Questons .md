@@ -171,3 +171,19 @@ btn.addEventListener("click", () => {
 ---
 
 **💡 Pro Tip:** Practice these patterns - they appear in 90% of DOM interviews!
+
+
+# innerHTML vs textContent vs innerText
+
+| Feature          | `innerHTML`    | `textContent` | `innerText`   |
+| ---------------- | -------------- | ------------- | ------------- |
+| **Parses HTML**  | ✅ Yes          | ❌ No          | ❌ No          |
+| **XSS Risk**     | ⚠️ Yes          | ✅ No          | ✅ No          |
+| **Performance**  | Slow           | Fast          | Slow          |
+| **Respects CSS** | ❌ No           | ❌ No          | ✅ Yes         |
+| **Best Use**     | HTML injection | Text update   | UI-based text |
+
+## Quick Examples
+
+### innerHTML
+```javascript

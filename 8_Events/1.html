@@ -1,5 +1,4 @@
-+
-+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +20,7 @@
 </body>
 <script>
     // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked") 
+    //     alert("owl clicked")  //REVIEW - 
     // }
 
 
@@ -68,7 +67,7 @@
     
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') { // if  is required here to ensure that on clicking the google link it doesnt not remove the whole ul tag 
+        if (e.target.tagName === 'IMG') { // it is required here to ensure that on clicking the google link it doesnt not remove the whole ul tag 
             console.log(e);
             console.log(e.target.id);
             let removeIt = e.target.parentNode

@@ -11,11 +11,11 @@ The `setTimeout()` function is used to **delay the execution of code** by a spec
 setTimeout(callback, delay, ...args);
 ```
 
-| Parameter | Description |
-|-----------|-------------|
-| `callback` | Function to be executed after the delay |
-| `delay` | Time in **milliseconds** before the function runs |
-| `...args` | Optional arguments passed to the callback |
+| Parameter  | Description                                       |
+| ---------- | ------------------------------------------------- |
+| `callback` | Function to be executed after the delay           |
+| `delay`    | Time in **milliseconds** before the function runs |
+| `...args`  | Optional arguments passed to the callback         |
 
 ### 📝 Example with Arguments
 ```javascript
@@ -80,3 +80,58 @@ Event delegation is a technique in JavaScript that leverages event bubbling to h
 ## 🎧 Types of Listeners
 
 Various JavaScript event listeners like mouse, keyboard, form, window, touch, and drag-and-drop events. Each event type is shown with examples using `addEventListener` to handle user interactions dynamically on the page.
+
+# preventDefault() vs stopPropagation()
+
+| Feature       | `preventDefault()`           | `stopPropagation()`                      |
+| ------------- | ---------------------------- | ---------------------------------------- |
+| **Purpose**   | Stops browser default action | Stops event bubbling                     |
+| **Affects**   | Browser behavior             | Event flow                               |
+| **Use Cases** | Form submit, link open       | Parent click handler                     |
+| **Example**   | Prevent form submission      | Stop click from reaching parent elements |
+
+## Quick Examples
+
+### preventDefault()
+```javascript
+// Prevent form from submitting
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  // Handle form data yourself
+});
+
+// Prevent link from navigating
+link.addEventListener('click', (e) => {
+  e.preventDefault();
+  // Do something else instead
+});
+```
+
+### stopPropagation()
+```javascript
+// Stop event from bubbling to parent
+button.addEventListener('click', (e) => {
+  e.stopPropagation();
+  // Parent's click handler won't fire
+});
+
+// Prevent event from reaching other listeners
+element.addEventListener('click', (e) => {
+  e.stopPropagation();
+  // Other click handlers on ancestors won't trigger
+});
+```
+
+## Key Differences
+
+- **preventDefault()**: "Don't do the default thing the browser would do"
+- **stopPropagation()**: "Don't tell parent elements about this event"
+
+## When to Use Both
+```javascript
+element.addEventListener('click', (e) => {
+  e.preventDefault();      // Stop default action
+  e.stopPropagation();     // Stop event bubbling
+  // Your custom logic here
+});
+```
