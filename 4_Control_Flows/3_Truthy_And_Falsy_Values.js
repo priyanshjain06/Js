@@ -27,6 +27,10 @@ if (Object.keys(emptyObj).length === 0) {
 // let  val1 = null ?? 5
 // is used to provide a default value ONLY when the left side is: null undefined
 
+
+//REVIEW -  Its uses : 1) user input 2) Api's 
+
+
 let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10

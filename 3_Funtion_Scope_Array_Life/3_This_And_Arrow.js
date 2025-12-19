@@ -63,7 +63,8 @@ chai3()
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
 //REVIEW
-const addTwo = (num1, num2) => ({ username: "hitesh" }); // for object we use curly braces , it returns undefined
+const addTwo = (num1, num2) => ({ username: "hitesh" }); 
+// for object we use curly braces , it returns undefined
 console.log(addTwo(3, 4));
 
 
