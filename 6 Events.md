@@ -135,3 +135,56 @@ element.addEventListener('click', (e) => {
   // Your custom logic here
 });
 ```
+
+## false propagation 
+- Bubbling phase is called false propagation ! 
+- Example : add event listener 
+  
+```javascript
+   document.getElementById('owl').addEventListener('click', function(e){
+         console.log("owl clicked");
+         e.stopPropagation() 
+    }, false)
+  ```
+
+## setting alerts 
+``` javascript
+ document.getElementById('owl').onclick = function(){
+        alert("owl clicked")  
+     }
+    ```
+
+    # V8 Engine vs API (Clean & Clear)
+
+## 1️⃣ What is the V8 Engine?
+
+👉 **V8 is a JavaScript engine that executes JavaScript code.**
+
+- Written in C++
+- Converts JS → machine code
+- Super fast 🚀
+
+## 2️⃣ What is an API (in this context)?
+
+Here, **API means Browser APIs / Web APIs** (not REST APIs).
+
+👉 **APIs provide extra capabilities that JavaScript itself does NOT have.**
+
+---
+
+## Comparison Table
+
+| Feature                        | V8 Engine | APIs  |
+| ------------------------------ | --------- | ----- |
+| **Execute JS code**            | ✅ Yes     | ❌ No  |
+| **Convert JS to machine code** | ✅ Yes     | ❌ No  |
+| **DOM access**                 | ❌ No      | ✅ Yes |
+| **setTimeout**                 | ❌ No      | ✅ Yes |
+| **fetch / HTTP**               | ❌ No      | ✅ Yes |
+| **File system**                | ❌ No      | ✅ Yes |
+
+---
+
+## 3️⃣ What Does V8 Handle?
+
+✅ **Pure JavaScript executi

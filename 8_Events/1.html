@@ -67,7 +67,7 @@
     
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') { // it is required here to ensure that on clicking the google link it doesnt not remove the whole ul tag 
+        if (e.target.tagName === 'IMG') { // i is required here to ensure that on clicking the google link it doesnt not remove the whole ul tag 
             console.log(e);
             console.log(e.target.id);
             let removeIt = e.target.parentNode
