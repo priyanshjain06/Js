@@ -32,8 +32,7 @@ JsUser.email = "hitesh@microsoft.com";
 JsUser.greeting = function () {
   console.log("Hello JS user");
 };
-console.log(JsUser.greeting()); //REVIEW
-console.log(JsUser.greeting); //REVIEW undefined
+console.log(JsUser.greeting()); 
 console.log("--------------------------------");
 
 JsUser.greetingTwo = function () {
