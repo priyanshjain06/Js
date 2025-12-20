@@ -31,7 +31,7 @@ chai();
 "use strict"
 function chai(){
   let username = "hitesh";
-  console.log(this); //REVIEW returns undefined because strict mode logs the global object (window in browsers)  
+  console.log(this); //REVIEW returns undefined
   console.log(this.username); //returns error as undefined because username is not a property of the global object
 }
 chai();
@@ -39,7 +39,7 @@ chai();
 
 const chai_2 = function () {
   let username = "hitesh";
-  console.log(this); // gives deafult values of the function
+  console.log(this); // gives global object values 
   console.log(this.username);// returns undefined it works only in strict mode or if the function is present in the object
 };
 chai_2()

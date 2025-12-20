@@ -40,7 +40,7 @@ function loginUserMessage(username = "sam"){
         console.log("PLease enter a username");
         return
     }
-    return `${username} just logged in`     //REVIEW REMEBER THIS
+    return `${username} just logged in`     //REVIEW this. is not used 
 }
 
 // console.log(loginUserMessage("hitesh"))
