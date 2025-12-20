@@ -5,7 +5,6 @@ let index = 0;
 // }
 
 
-
 let myArray = ["flash", "batman", "superman"];
 
 //REVIEW -
@@ -14,7 +13,6 @@ while (arr < myArray.length) {
   //console.log(`Value is ${myArray[arr]}`);
   arr = arr + 1;
 }
-
 
 
 let score = 11;
