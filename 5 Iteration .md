@@ -47,7 +47,7 @@ arr.forEach((value, index) => {
 **🎯 Works on:** Arrays only  
 **❌ Cannot:** Use `break` or `return`  
 **🔥 Best for:** Performing actions (logging, API calls)
-
+//REVIEW - 
 ---
 
 ## 🔍 4. `.map()` - Transform Data
@@ -60,7 +60,7 @@ const squared = arr.map(num => num * num); // [1, 4, 9]
 **✅ Purpose:** Create **new array** by transforming each element  
 **🎯 Returns:** New array (original unchanged)  
 **🔥 Best for:** Data transformation
-
+//REVIEW - 
 ---
 
 ## 🔍 5. `.filter()` - Filter Data
@@ -88,7 +88,7 @@ const sum = arr.reduce((acc, curr) => acc + curr, 0); // 10
 **🔥 Best for:** Aggregating/combining data (totals, counts, objects)
 
 ---
-
+//REVIEW - 
 ## 📊 Comparison Table
 
 | Method | Input | Output | Returns | Breakable | Best For |

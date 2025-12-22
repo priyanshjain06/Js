@@ -10,7 +10,7 @@ let myArray = ["flash", "batman", "superman"];
 //REVIEW -
 let arr = 0;
 while (arr < myArray.length) {
-  //console.log(`Value is ${myArray[arr]}`);
+  //console.log(` is ${myArray[arr]}`);
   arr = arr + 1;
 }
 

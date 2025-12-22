@@ -10,7 +10,7 @@ for (let i = 1; i <= 10; i++) {
   }
 }
 
-//REVIEW -  looping array !
+//REVIEW -  looping array ! and array.length
 
 let myArray = ["flash", "batman", "superman"];
 //console.log(myArray.length);
