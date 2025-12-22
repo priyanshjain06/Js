@@ -3,13 +3,10 @@ function outer() {
   function inner() {
     console.log(name);
   }
-  return inner; //REVIEW - 
+  return inner; //REVIEW -
 }
 
-//   outer();
-//   console.log(`outer function is finished `);
 const call = outer();
 call();
 
-//   closure gives you access to an outer function's scope from an inner function.
-//  In JavaScript, closures are created every time a function is created, at function creation time.
+//REVIEW - A closure is created when a function remembers and can access variables from its outer (lexical) scope, even after the outer function has finished executing.
