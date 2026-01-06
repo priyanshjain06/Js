@@ -14,7 +14,6 @@ const myObject1 = {
   swift: "swift by apple",
 };
 
-
 for (const key in myObject1) {
   console.log(`${key} shortcut is for ${myObject1[key]}`);
   //REVIEW - . is not used to access , access is done like array
