@@ -11,9 +11,9 @@ const myArr2 = new Array(1, 2, 3, 4);
 
 // Array methods
 
-// myArr.push(6) // at last position
+// myArr.push(6) //REVIEW at last position
 // myArr.push(7)
-// myArr.pop() // deletes from last position
+// myArr.pop() //REVIEW deletes from last position
 
 // myArr.unshift(9) => not good increases time complexity , plcaces at 0th position
 // myArr.shift()
